@@ -12,6 +12,7 @@ import { setContext } from "apollo-link-context";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
 import IsAuthenticated from "./components/IsAuthenticated";
+import "./App.css";
 
 const httpLink = new HttpLink({ uri: "http://localhost:4000" });
 const authLink = setContext(async (req, { headers }) => {
